@@ -21,6 +21,7 @@ public class user
     }
 
     public void setUserName(String userName) {
+        System.out.println("userName="+userName);
         this.userName = userName;
     }
 

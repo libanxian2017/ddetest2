@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean class="com.centit.dde.user" id="user">
     <constructor-arg name="id" value="1"/>
     <constructor-arg name="userName" value="xiaohuan"/>
     <constructor-arg name="address" value="qqq"/>
 </bean>
+<bean class="com.centit.dde.user" id="user2">
+    <property name="id" value="2"/>
+    <property name="userName" value="xiaohei"/>
+    <property name="address" value="www.javaboy.com"/>
+</bean>
+    <bean class="com.centit.dde.user" id="user3" p:userName="javagirl" p:id="3" p:address="com.baidu.com"/>
+
 
 </beans>
