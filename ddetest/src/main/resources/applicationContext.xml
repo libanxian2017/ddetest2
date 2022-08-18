@@ -15,4 +15,7 @@
     <bean class="com.centit.dde.user" id="user3" p:userName="javagirl" p:id="3" p:address="com.baidu.com"/>
 
 
+
+    <bean class="com.centit.OkhttpFactory" id="okhttpFactory"/>
+    <bean class="okhttp3.OkHttpClient" factory-bean="okhttpFactory" factory-method="getInstance" id="okHttpClient"/>
 </beans>
